@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import { Navbar } from "./components/Navbar";
 import { GridContainer } from "./components/GridContainer";
 import "./App.css";
+import { tracks } from "./data";
 
 export function App(): ReactElement {
 
@@ -9,7 +10,7 @@ export function App(): ReactElement {
     <>
       <div id="wrapper">
         <Navbar />
-        <GridContainer />
+        <GridContainer data={tracks.data} />
       </div>
     </>
   );
