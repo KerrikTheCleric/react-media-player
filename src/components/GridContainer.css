@@ -16,3 +16,9 @@
 
 .item1 { grid-area: menu; }
 .item2 { grid-area: player; }
+
+.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+}
