@@ -1,8 +1,6 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-      'header header'
-      'menu player'
       'menu player';
     gap: 10px;
     background-color: #2196F3;
@@ -16,6 +14,5 @@
     font-size: 30px;
   }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: player; }
+.item1 { grid-area: menu; }
+.item2 { grid-area: player; }
