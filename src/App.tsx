@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import { Navbar} from "./components/Navbar";
+import {GridContainer} from "./components/GridContainer";
 
 export function App(): ReactElement {
 
@@ -9,6 +10,7 @@ export function App(): ReactElement {
   return (
     <>
       <Navbar/>
+      <GridContainer/>
       <h1>This is the App component</h1>
       <ul>{listItems}</ul>
     </>
