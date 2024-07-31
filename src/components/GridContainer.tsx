@@ -33,24 +33,27 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
             <ul className="playingDisplay">
                 <img className="player-image" src={testImage} alt="Playing" />
                 <li className="playerList playerList-top">
-                    <span className="material-symbols-outlined"> add_circle </span>
+                    <span className="material-symbols-outlined playerIcons-small"> add_circle </span>
                     <ul className="playerList-top-verticalTextList">
                         <span> <b>{data[0].artist}</b> </span>
                         <span> {data[0].name} </span>
                     </ul>
-                    <span className="material-symbols-outlined">favorite</span>
+                    <span className="material-symbols-outlined playerIcons-small">favorite</span>
                 </li>
                 <li className="playerList playerList-middle">
-                    <span>C Time</span>
-                    <span>Slider</span>
-                    <span>T Time</span>
+                    {/* Seek slider taken from: https://www.geeksforgeeks.org/create-a-music-player-using-javascript/ */}
+                    <div className="slider_container">
+                        <div className="current-time">00:40</div>
+                        <input type="range" min="1" max="100" value="20" className="seek_slider"/>
+                        <div className="total-duration">03:42</div>
+                    </div>
                 </li>
                 <li className="playerList playerList-bottom">
-                    <span className="material-symbols-outlined playerIcons"> repeat_on </span>
-                    <span className="material-symbols-outlined playerIcons"> skip_previous </span>
-                    <span className="material-symbols-outlined playerIcons">play_circle</span>
-                    <span className="material-symbols-outlined playerIcons">skip_next</span>
-                    <span className="material-symbols-outlined playerIcons">shuffle</span>
+                    <span className="material-symbols-outlined playerIcons-small">repeat_on </span>
+                    <span className="material-symbols-outlined playerIcons-big">skip_previous </span>
+                    <span className="material-symbols-outlined playerIcons-big">play_circle</span>
+                    <span className="material-symbols-outlined playerIcons-big">skip_next</span>
+                    <span className="material-symbols-outlined playerIcons-small">shuffle</span>
                 </li>
             </ul>
         </div>
