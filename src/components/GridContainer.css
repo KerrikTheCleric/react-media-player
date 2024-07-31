@@ -3,7 +3,8 @@
     grid-template-areas:
       'menu player';
     gap: 10px;
-    background-color: #2196F3;
+    background-color: #17263c;
+    color: aliceblue;
     padding: 10px;
   }
   

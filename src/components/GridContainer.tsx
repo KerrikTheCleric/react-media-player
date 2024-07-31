@@ -20,7 +20,6 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
                 <li className="trackListItem-textItem"><b>{track.artist}</b></li>
                 <li className="trackListItem-textItem">{track.name}</li>
             </ul>
-
             <span className="material-symbols-outlined"> play_circle </span>
         </li>
     );

@@ -1,6 +1,7 @@
 .trackListItem{
-    background-color: blueviolet;
-    border-bottom-style: double;
+    background-color: 17263c;
+    border-bottom-style: solid;
+    border-color: #152235;
 }
 
 .trackListItem > span:last-child{
