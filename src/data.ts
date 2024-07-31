@@ -3,10 +3,10 @@ import testImage from "./assets/album_cover.png";
 
 export const tracks: ITrackMenuItemList = {
     data: [
-        { artist: "Artist1", name: "Paradise", image: testImage },
-        { artist: "Artist2", name: "Paradise2", image: testImage },
-        { artist: "Artist3", name: "Paradise3", image: testImage },
-        { artist: "Artist4", name: "Paradise4", image: testImage },
-        { artist: "Artist5", name: "Paradise5", image: testImage },
+        { artist: "Artist 1", name: "Track 1", image: testImage },
+        { artist: "Artist 2", name: "Track 2", image: testImage },
+        { artist: "Artist 3", name: "Track 3", image: testImage },
+        { artist: "Artist 4", name: "Track 4", image: testImage },
+        { artist: "Artist 5", name: "Track 5", image: testImage },
     ]
 }
