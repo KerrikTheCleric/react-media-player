@@ -1,4 +1,11 @@
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items:start; 
+    height: 100vh; 
+    margin: 0; 
+  }
+
 #wrapper { 
     float: left; 
-    
 }

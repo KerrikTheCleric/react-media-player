@@ -11,7 +11,7 @@ import "./TrackListItem.css";
 export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
 
     const listItems = data.map((track) =>
-        <li className="trackListItem">
+        <li className="trackListItem" key={crypto.randomUUID() }>
             <img className="list-image"
                 src={track.image}
                 alt={track.name}
@@ -44,7 +44,7 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
                     {/* Seek slider taken from: https://www.geeksforgeeks.org/create-a-music-player-using-javascript/ */}
                     <div className="slider_container">
                         <div className="current-time">00:40</div>
-                        <input type="range" min="1" max="100" value="20" className="seek_slider"/>
+                        <input type="range" min="1" max="100" value="20" className="seek_slider" readOnly/>
                         <div className="total-duration">03:42</div>
                     </div>
                 </li>
