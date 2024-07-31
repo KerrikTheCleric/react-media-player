@@ -32,26 +32,27 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
             <ul className="trackList">{listItems}</ul>
             <ul className="playingDisplay">
                 <img className="player-image" src={testImage} alt="Playing" />
-                <li className="playerTopList">
+                <li className="playerList playerList-top">
                     <span className="material-symbols-outlined"> add_circle </span>
-                    <span className="material-symbols-outlined"> play_circle </span>
+                    <ul className="playerList-top-verticalTextList">
+                        <span> TEXT </span>
+                        <span> TEXT </span>
+                    </ul>
                     <span className="material-symbols-outlined">favorite</span>
                 </li>
-                <li className="playerTopList">
-                    <span className="material-symbols-outlined"> add_circle </span>
-                    <span className="material-symbols-outlined"> play_circle </span>
-                    <span className="material-symbols-outlined">favorite</span>
+                <li className="playerList playerList-middle">
+                    <span>C Time</span>
+                    <span>Slider</span>
+                    <span>T Time</span>
                 </li>
-                <li className="playerTopList">
-                    <span className="material-symbols-outlined"> add_circle </span>
-                    <span className="material-symbols-outlined"> play_circle </span>
-                    <span className="material-symbols-outlined">favorite</span>
-                    <span className="material-symbols-outlined">favorite</span>
-                    <span className="material-symbols-outlined">favorite</span>
+                <li className="playerList playerList-bottom">
+                    <span className="material-symbols-outlined"> repeat_on </span>
+                    <span className="material-symbols-outlined"> skip_previous </span>
+                    <span className="material-symbols-outlined">play_circle</span>
+                    <span className="material-symbols-outlined">skip_next</span>
+                    <span className="material-symbols-outlined">shuffle</span>
                 </li>
             </ul>
-
-            {/* <div className="item2">{data[0].name}</div> */}
         </div>
     );
 }
