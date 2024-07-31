@@ -41,6 +41,7 @@
   padding-left: 0;
   display: grid;
   align-content: baseline;
+  justify-items: center;
 }
 
 .playerList.playerList-middle{

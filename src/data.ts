@@ -3,7 +3,7 @@ import testImage from "./assets/album_cover.png";
 
 export const tracks: ITrackMenuItemList = {
     data: [
-        { artist: "Artist 1", name: "Track 1", image: testImage },
+        { artist: "Luca Turilli's Rhapsody", name: "In The Mirror", image: testImage },
         { artist: "Artist 2", name: "Track 2", image: testImage },
         { artist: "Artist 3", name: "Track 3", image: testImage },
         { artist: "Artist 4", name: "Track 4", image: testImage },

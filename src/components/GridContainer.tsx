@@ -35,8 +35,8 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
                 <li className="playerList playerList-top">
                     <span className="material-symbols-outlined"> add_circle </span>
                     <ul className="playerList-top-verticalTextList">
-                        <span> TEXT </span>
-                        <span> TEXT </span>
+                        <span> <b>{data[0].artist}</b> </span>
+                        <span> {data[0].name} </span>
                     </ul>
                     <span className="material-symbols-outlined">favorite</span>
                 </li>
