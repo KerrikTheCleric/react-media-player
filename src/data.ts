@@ -8,5 +8,7 @@ export const tracks: ITrackMenuItemList = {
         { artist: "Artist 3", name: "Track 3", image: testImage },
         { artist: "Artist 4", name: "Track 4", image: testImage },
         { artist: "Artist 5", name: "Track 5", image: testImage },
+        { artist: "Artist 6", name: "Track 6", image: testImage },
+        { artist: "Artist 7", name: "Track 7", image: testImage },
     ]
 }

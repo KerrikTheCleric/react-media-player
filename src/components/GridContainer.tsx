@@ -18,7 +18,7 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
             />
             <ul className="trackList">
                 <li className="trackListItem-textItem"><b>{track.artist}</b></li>
-                <li className="trackListItem-textItem"><b>{track.name}</b></li>
+                <li className="trackListItem-textItem">{track.name}</li>
             </ul>
 
             <span className="material-symbols-outlined"> play_circle </span>
@@ -46,11 +46,11 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
                     <span>T Time</span>
                 </li>
                 <li className="playerList playerList-bottom">
-                    <span className="material-symbols-outlined"> repeat_on </span>
-                    <span className="material-symbols-outlined"> skip_previous </span>
-                    <span className="material-symbols-outlined">play_circle</span>
-                    <span className="material-symbols-outlined">skip_next</span>
-                    <span className="material-symbols-outlined">shuffle</span>
+                    <span className="material-symbols-outlined playerIcons"> repeat_on </span>
+                    <span className="material-symbols-outlined playerIcons"> skip_previous </span>
+                    <span className="material-symbols-outlined playerIcons">play_circle</span>
+                    <span className="material-symbols-outlined playerIcons">skip_next</span>
+                    <span className="material-symbols-outlined playerIcons">shuffle</span>
                 </li>
             </ul>
         </div>
