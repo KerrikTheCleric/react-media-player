@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import { ITrackMenuItemList } from "../interfaces";
-import { TrackListItem } from "./TrackListItem";
 import testImage from "../assets/album_cover.png";
 
 import "./GridContainer.css";
@@ -12,7 +11,7 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
 
     const listItems = data.map((track) =>
         <li className="trackListItem" key={crypto.randomUUID() }>
-            <img className="list-image"
+            <img className="trackList-image"
                 src={track.image}
                 alt={track.name}
             />
@@ -31,7 +30,7 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
             <ul className="trackList">{listItems}</ul>
             <ul className="playingDisplay">
                 <img className="player-image" src={testImage} alt="Playing" />
-                <li className="playerList playerList-top">
+                <li className="playerList">
                     <span className="material-symbols-outlined playerIcons-small"> add_circle </span>
                     <ul className="playerList-top-verticalTextList">
                         <span> <b>{data[0].artist}</b> </span>
@@ -39,7 +38,7 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
                     </ul>
                     <span className="material-symbols-outlined playerIcons-small">favorite</span>
                 </li>
-                <li className="playerList playerList-middle">
+                <li className="playerList">
                     {/* Seek slider taken from: https://www.geeksforgeeks.org/create-a-music-player-using-javascript/ */}
                     <div className="slider_container">
                         <div className="current-time">00:40</div>
@@ -47,7 +46,7 @@ export function GridContainer({ data }: ITrackMenuItemList): ReactElement {
                         <div className="total-duration">03:42</div>
                     </div>
                 </li>
-                <li className="playerList playerList-bottom">
+                <li className="playerList">
                     <span className="material-symbols-outlined playerIcons-small">repeat_on </span>
                     <span className="material-symbols-outlined playerIcons-big">skip_previous </span>
                     <span className="material-symbols-outlined playerIcons-big">play_circle</span>

@@ -1,3 +1,5 @@
+/*Organizes the app so it's centered and makes the navbar and grid container have the same size.*/
+
 body { 
     display: flex; 
     justify-content: center; 
@@ -6,6 +8,3 @@ body {
     margin: 0; 
   }
 
-#wrapper { 
-    float: left; 
-}

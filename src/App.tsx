@@ -8,10 +8,8 @@ export function App(): ReactElement {
 
   return (
     <>
-      <div id="wrapper">
-        <Navbar />
-        <GridContainer data={tracks.data} />
-      </div>
+      <Navbar />
+      <GridContainer data={tracks.data} />
     </>
   );
 }

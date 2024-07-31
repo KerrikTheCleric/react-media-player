@@ -8,19 +8,27 @@
     padding: 10px;
   }
   
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-
-
-
 .trackList{
   padding-left: 0;
   margin: 0;
-  min-width: 200px;
+  min-width: 15rem;
+}
+
+.trackListItem {
+  list-style-type: none; 
+  padding: 5px; 
+  margin: 0;
+  display: flex;
+}
+
+.trackListItem-textItem{
+  list-style-type: none; 
+  padding: 5px; 
+}
+
+.trackList-image{
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .playingDisplay{
@@ -35,8 +43,9 @@
   align-items: center;
 }
 
-.playerList.playerList-top{
-  
+.player-image{
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .playerList-top-verticalTextList{
@@ -44,37 +53,6 @@
   display: grid;
   align-content: baseline;
   justify-items: center;
-}
-
-.playerList.playerList-middle{
-}
-
-.playerList.playerList-bottom{
-  
-}
-
-
-
-.trackListItem {
-  list-style-type: none; 
-  padding: 5px; 
-  margin: 0;
-  display: flex;
-}
-
-.trackListItem-textItem{
-  list-style-type: none; 
-  padding: 5px; 
-}
-
-.list-image{
-  max-width: 60px;
-  max-height: 60px;
-}
-
-.player-image{
-  max-width: 300px;
-  max-height: 300px;
 }
 
 .playerIcons-small{
