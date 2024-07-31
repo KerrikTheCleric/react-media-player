@@ -17,8 +17,18 @@
 .item1 { grid-area: menu; }
 .item2 { grid-area: player; }
 
-.no-bullets {
+.trackList{
+  padding-left: 0;
+}
+
+.trackListItem {
   list-style-type: none; 
-  padding: 0; 
+  padding: 5px; 
   margin: 0;
+  display: flex;
+}
+
+.list-image{
+  max-width: 40px;
+  max-height: 40px;
 }
