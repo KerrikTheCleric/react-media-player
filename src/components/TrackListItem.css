@@ -1,4 +1,8 @@
 .trackListItem{
     background-color: blueviolet;
-    
+    border-bottom-style: double;
+}
+
+.trackListItem > span:last-child{
+    padding-top: 1rem;
 }

@@ -20,7 +20,6 @@
   padding-left: 0;
   margin: 0;
   min-width: 200px;
-  
 }
 
 .playingDisplay{
@@ -59,10 +58,12 @@
   padding: 5px; 
   margin: 0;
   display: flex;
-  /* border-bottom:thin solid black; */
 }
 
-
+.trackListItem-textItem{
+  list-style-type: none; 
+  padding: 5px; 
+}
 
 .list-image{
   max-width: 60px;
